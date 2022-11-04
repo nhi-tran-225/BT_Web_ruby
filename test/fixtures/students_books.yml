@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Ma_HS: MyString
+  Ten_HS: MyString
+  Lop: MyString
+  Ma_Sach: MyString
+  Ten_Sach: MyString
+  Ten_TacGia: MyString
+
+two:
+  Ma_HS: MyString
+  Ten_HS: MyString
+  Lop: MyString
+  Ma_Sach: MyString
+  Ten_Sach: MyString
+  Ten_TacGia: MyString

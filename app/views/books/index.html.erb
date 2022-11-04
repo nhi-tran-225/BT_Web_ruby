@@ -1,0 +1,42 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="w-50 mr-auto text-center font-weight-bold">
+  <p>THƯ VIỆN</p>
+  <p>TRƯỜNG TIỂU HỌC PHONG THANH TÂY A</p>
+</div>
+<div class="d-flex">
+  <p class="w-75 text-center font-weight-bold">QUẢN LÝ CHO HỌC SINH MƯỢN SÁCH</p>
+  <div class="d-flex">
+    <span>Quy định ngày quá hạn </span>
+    <span class="border-danger border-2">3</span>
+  </div>
+</div>
+<div id="students_books">
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Ma HS</th>
+      <th scope="col">Ten HS</th>
+      <th scope="col">Lop</th>
+      <th scope="col">Ma Sach</th>
+      <th scope="col">Ten Sach</th>
+      <th scope="col">Tac Gia</th>
+      <th scope="col">Tu Sach</th>
+      <th scope="col">So BM</th>
+      <th scope="col">Ngay Muon</th>
+      <th scope="col">Ngay Tra</th>
+      <th scope="col">So Ngay</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% i_140 = 1 %>
+    <% @books.each do |book_140| %>
+      <%= render :partial => 'books/book', :locals => {:index => i_140, :book_140 => book_140}%>
+      <% i_140 += 1 %>
+    <% end %>
+    </tbody>
+  </table>
+</div>
+
+<%= link_to "New students book", new_book_path %>

@@ -1,0 +1,42 @@
+table,
+td,
+th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 15px;
+}
+.div1{
+    display: flex;
+    orientation: landscape;
+}
+.school{
+    color: green;
+    text-align: center; 
+    font-size: 10px;
+}
+.title{
+    display: flex;
+    orientation: landscape;
+}
+h1{
+    width: 75%;
+    color: red;
+    text-align: center;
+}
+.date{
+    text-align: right;
+}
+.ngaymuon{
+    color: red;
+    font-size: 35px;
+    font-weight: bold;
+}
